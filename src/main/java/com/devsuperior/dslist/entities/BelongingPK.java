@@ -57,6 +57,4 @@ public class BelongingPK {
         BelongingPK other = (BelongingPK) obj;
         return Objects.equals(game, other.game) && Objects.equals(list, other.list);
     }
-
-
 }
