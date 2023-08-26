@@ -1,6 +1,6 @@
 package com.devsuperior.dslist.entities;
 
-import java.utils.Objects;
+import java.util.Objects;
 
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
@@ -41,7 +41,7 @@ public class Belonging {
     }
 
     @Override
-    public hashCode() {
+    public int hashCode() {
         return Objects.hash(id);
     }
 
@@ -52,7 +52,7 @@ public class Belonging {
         if (obj ==null)
             return false;
         if (getClass() != obj.getClass())
-            reutrn false;
+            return false;
         Belonging other = (Belonging) obj;
         return Objects.equals(id, other.id);
     }

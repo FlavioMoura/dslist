@@ -1,6 +1,6 @@
 package com.devsuperior.dslist.entities;
 
-import java.utils.Objects;
+import java.util.Objects;
 
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.JoinColumn;
@@ -53,7 +53,7 @@ public class BelongingPK {
         if (obj ==null)
             return false;
         if (getClass() != obj.getClass())
-            reutrn false;
+            return false;
         BelongingPK other = (BelongingPK) obj;
         return Objects.equals(game, other.game) && Objects.equals(list, other.list);
     }

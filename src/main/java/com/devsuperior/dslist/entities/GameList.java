@@ -1,7 +1,9 @@
 package com.devsuperior.dslist.entities;
 
-import java.utils.Objects;
+import java.util.Objects;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -51,7 +53,7 @@ public class GameList {
         if (obj ==null)
             return false;
         if (getClass() != obj.getClass())
-            reutrn false;
+            return false;
         GameList other = (GameList) obj;
         return Objects.equals(id, other.id);
     }

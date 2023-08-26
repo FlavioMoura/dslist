@@ -1,4 +1,4 @@
-import com.devsuperior.dslist.dto;
+package com.devsuperior.dslist.dto;
 
 public class ReplacementDTO {
 

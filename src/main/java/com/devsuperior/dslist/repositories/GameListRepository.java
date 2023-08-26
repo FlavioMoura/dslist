@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import com.devsuperior.dslist.entities.GameList;
 
-public interface GameRepository extends JpaRepository<GameList, Long> {
+public interface GameListRepository extends JpaRepository<GameList, Long> {
 
     @Modifying
     @Query(nativeQuery = true,
